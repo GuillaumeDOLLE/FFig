@@ -4,4 +4,4 @@ Technos utilisées :
   - NodeJS
   - Express
   - EJS
-  - PostgreSQL# FFig
+  - PostgreSQL
