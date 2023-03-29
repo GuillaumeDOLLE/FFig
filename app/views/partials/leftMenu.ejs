@@ -1,0 +1,33 @@
+<div class="container container-main">
+
+    <div class="row">
+
+      <div class="col-lg-3">
+
+        <h1 class="my-4">FFig</h1>
+        
+        <h5>Catégories</h5>
+        <div class="list-group">
+            <% for(const category of categoryNames) { %>
+              <% let cat = category %>
+
+    <a class="list-group-item d-flex justify-content-between align-items-center" href="/category/<%= cat%>">
+        Les <% switch (cat) {
+          case "Gentil": %>
+        gentils
+        <% break;
+          case "Méchant": %>
+        méchants
+        <% break;
+          case "Animal": %>
+        animaux
+        <% break;
+          default:
+          break; } %> 
+            <span class="badge badge-primary badge-pill"><%=objt[cat]%></span>
+          </a>
+          <% } %>
+
+        </div>
+
+      </div>
